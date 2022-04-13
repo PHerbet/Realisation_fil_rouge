@@ -404,7 +404,7 @@
 											"font": "Arial;13;1",
 											"left": 205,
 											"top": 55,
-											"width": 630,
+											"width": 527,
 											"height": 13,
 											"text": "v1"
 										},
@@ -435,7 +435,7 @@
 									"font": "Arial;13;0",
 									"left": 200,
 									"top": 48,
-									"width": 640,
+									"width": 537,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF+e7CTLjgHmOA="
@@ -454,8 +454,8 @@
 							"font": "Arial;13;0",
 							"left": 200,
 							"top": 48,
-							"width": 640,
-							"height": 656,
+							"width": 537,
+							"height": 529,
 							"nameCompartment": {
 								"$ref": "AAAAAAF+e7CTLjgG+Fc="
 							}
