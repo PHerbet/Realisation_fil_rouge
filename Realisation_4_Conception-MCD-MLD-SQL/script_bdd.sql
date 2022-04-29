@@ -28,13 +28,13 @@ create table utilisateur(
     mdp_utilisateur varchar(100),
     mail_utilisateur varchar(50),
     img_utilisateur varchar(200),
-    statut_utilisateur boolean
+    statut_utilisateur boolean,
+    id_droit int
 )engine=InnoDB;
 
 create table droit(
 	id_droit int primary key auto_increment not null,
-    nom_droit varchar(10),
-    id_utilisateur int
+    nom_droit varchar(10)
 )engine=InnoDB;
 
 -- création de la table d'association
@@ -47,10 +47,10 @@ create table appartenir(
 
 -- mise en place des contraintes
 
-alter table droit
-add constraint droit_fk_utilisateur
-foreign key(id_utilisateur)
-references utilisateur(id_utilisateur);
+alter table utilisateur
+add constraint utilisateur_fk_droit
+foreign key(id_droit)
+references droit(id_droit);
 
 alter table favoris 
 add constraint favoris_fk_utilisateur
