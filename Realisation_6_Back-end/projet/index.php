@@ -10,8 +10,16 @@
     //test de la valeur $path dans l'URL et import de la ressource
     switch($path){
     //route /routing/test -> ./test.php
-    case $path === "/projet/acceuil":
+    case $path === "/projet/accueil":
     include "./controler/controler_connexion.php";
     break;
+
+    case $path === "/projet/inscription":
+        include "./controler/controler_creation.php";
+        break;
+
+    case $path === "/projet/favoris":
+        include "./controler/controler_favoris.php";
+        break;
     }
 ?>

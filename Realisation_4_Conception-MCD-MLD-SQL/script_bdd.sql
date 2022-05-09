@@ -27,8 +27,8 @@ create table utilisateur(
     login_utilisateur varchar(20),
     mdp_utilisateur varchar(100),
     mail_utilisateur varchar(50),
-    img_utilisateur varchar(200),
-    statut_utilisateur boolean,
+    img_utilisateur varchar(200) null,
+    statut_utilisateur boolean null,
     id_droit int
 )engine=InnoDB;
 
