@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Account creation form-->
-    <form action="connection" method="post">
+    <form action="" method="post">
         <label for="login">Login :</label>
             <input type="text" name="login" id="login">
         <label for="mail">E-mail :</label>

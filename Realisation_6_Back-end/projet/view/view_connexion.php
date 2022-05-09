@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Connexion form -->
-    <form action="connection" method="post">
+    <form action="" method="post">
         <label for="mail">E-mail :</label>
             <input type="mail" name="mail" id="mail">
         <label for="pass">Mot de passe :</label>

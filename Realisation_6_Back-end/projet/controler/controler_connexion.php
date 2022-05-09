@@ -19,16 +19,21 @@ var_dump($_POST['connection']);
         if (isset($_POST['mail']) && isset($_POST['mdp'])
         && $_POST['mail'] !="" && $_POST['mdp'] !="")
             {
-                //Instanciation of a new object
-                $utilisateur = new Utilisateur("", $_POST['mail'], $_POST['mdp']);
+                //instanciation of a new Object
+                $utilisateur = new Utilisateur(null, null, null, null);
+                $utilisateur -> setMailUtilisateur($_POST['mail']);
+                $utilisateur -> setImgUtilisateur($_POST['img']);
                 //Stockage the information in an array
+                var_dump($utilisateur);
                 $test = $utilisateur->show_user_by_mail($bdd);
                 //If the user exist in database, we check the password
                 if(!empty($test))
                 {//Getting the hash
-                    $hash = $test[0]['mdp'];
+                    $hash = $test[0]['mdp_utilisate'];
+                    var_dump($hash);
                     //We check the correspondance between the password in the datatbase an in the form
                     $password = password_verify($_POST['mdp'], $hash);
+                    var_dump($password);
                     if($password)
                     {//Creating super globale SESSION
                         $_SESSION['connected'] = true;
@@ -40,7 +45,11 @@ var_dump($_POST['connection']);
                         //Connection message
                         echo 'Vous êtes connecté !';
                         //Redirection
-                        header( 'Location: /projet/favoris');
+                        
+                        echo "<script>setTimeout(()=>{
+                            document.location.href='/correction_eval_mvc/showArticle'; 
+                            }, 1500);
+                        </script>";
                     }
                     else
                     {
