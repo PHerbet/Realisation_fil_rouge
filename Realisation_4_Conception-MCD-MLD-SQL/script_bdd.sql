@@ -1,10 +1,10 @@
 -- creation de la base de données
 
-create database Project;
+create database Projet;
 
--- on utilise la base crée
+-- on utilise la base créée
 
-use Project;
+use Projet;
 
 -- création des tables 
 
