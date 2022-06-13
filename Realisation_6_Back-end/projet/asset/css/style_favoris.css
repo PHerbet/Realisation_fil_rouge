@@ -1,0 +1,65 @@
+body {
+    margin: 0%;
+}
+
+.corps {
+    background-color: lightgray;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 50px auto;
+    height: 100vh;
+}
+
+.menu {
+    background-color: aqua;
+    border: 2px solid black;
+    grid-column: 1;
+    grid-row:  1/span 2;
+}
+
+.user {
+    background-color: aquamarine;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.user_img {
+    vertical-align: middle;
+}
+.all_favoris {
+    background-color: blue;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.all_dos {
+    background-color: lightcoral;
+    border: 2px solid black;
+}
+
+.dos {
+    background-color: lightgreen;
+    border: 2px solid black;
+}
+
+.favoris_menu {
+    background-color: lightslategrey;
+    border: 2px solid black;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.all_cards {
+    background-color: red;
+    border: 2px solid black;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.card{
+    background-color: yellow;
+    border: 2px solid black;
+}
