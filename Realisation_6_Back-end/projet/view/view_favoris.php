@@ -16,7 +16,7 @@
 			<div class="user">
 				<!-- div icone de l'user  -->
 				<div class="user_img">
-					<img src="./asset/img/user_icon.png" width="15px" height="15px">
+					<img src="./asset/img/user_icon.png">
 				</div>
 				<!-- div avec le pseudo récupéré via une fonction -->
 				<div class="login">
@@ -24,7 +24,7 @@
 				</div>
 				<!-- div du bouton menu -->
 				<div class="menu_icon">
-					<img src="./asset/img/dropdown.webp" width="15px" height="15px">
+					<img src="./asset/img/dropdown.webp">
 				</div>
 			</div>
 			<!-- div afficher tout les favoris et bouton création de dossier -->
@@ -35,7 +35,11 @@
 				</span>
 				<!-- div bouton ajout dossier -->
 				<div class="add_icon">
-					<img src="./asset/img/add_folder.webp" width="15px" height="15px">
+					<img src="./asset/img/add_folder.webp">
+				</div>
+				<!-- div du menu caché -->
+				<div class="hide_menu">
+
 				</div>
 			</div>
 			<!-- div contenant tout les dossiers de favoris généré par la fonction  -->
@@ -43,15 +47,25 @@
 				<p> Test</p>
 				<!-- div d'un dossier de favoris généré par une fonction -->
 				<div class="dos">
-					<p> lien qui va générer les cards des favoris </p>
+					<p> fonction qui va générer les liens des dossier de favori </p>
 				</div>
 			</div>
 		</div>
 		<!-- div du menu des favoris -->
 		<div class="favoris_menu">
+			<!-- div de recherche -->
 			<div class="search">
-				<input type="text" name="" id="" placeholder="Search">
-				<img src="./asset/img/icon_search.webp" width="15px" height="15px" >
+				<form class="rechercher" method="GET" action="rechercher.php">
+            		<input type="text" placeholder="Rechercher">
+            		<input type="image" class="searchbutton" src="./asset/img/icon_search.webp">
+    			</form>			
+			</div>
+			<!-- div menu déroulant -->
+			<div class="dropdown">
+				<select>
+					<option value="add">Ajouter Favoris</option>
+					<option value="import">Importer Favoris</option>
+				</select>
 			</div>
 		</div>
 		<!-- div contenant les carte des favoris généré par une fonction -->
@@ -64,4 +78,3 @@
 	</div>
 </body>
 </html>
-
