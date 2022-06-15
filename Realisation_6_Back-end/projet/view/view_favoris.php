@@ -26,6 +26,15 @@
 				<div class="menu_icon">
 					<img src="./asset/img/dropdown.webp">
 				</div>
+				<!-- div du menu caché -->
+				<div class="hide_menu">
+					<div class="parametre">
+						<a href="controler/controler_parametre.php">Paramètre</a>
+					</div>
+					<div class="deconnection">
+						<a href="deconnection">Déconnexion</a>
+					</div>
+				</div>
 			</div>
 			<!-- div afficher tout les favoris et bouton création de dossier -->
 			<div class="all_favoris">
@@ -37,14 +46,10 @@
 				<div class="add_icon">
 					<img src="./asset/img/add_folder.webp">
 				</div>
-				<!-- div du menu caché -->
-				<div class="hide_menu">
-
-				</div>
 			</div>
 			<!-- div contenant tout les dossiers de favoris généré par la fonction  -->
 			<div class="all_dos">
-				<p> Test</p>
+				<p> Test </p>
 				<!-- div d'un dossier de favoris généré par une fonction -->
 				<div class="dos">
 					<p> fonction qui va générer les liens des dossier de favori </p>
@@ -64,7 +69,7 @@
 			<div class="dropdown">
 				<select>
 					<option value="add">Ajouter Favoris</option>
-					<option value="import">Importer Favoris</option>
+					<option value="import"><input type="file" hidden>Importer Favoris</option>
 				</select>
 			</div>
 		</div>

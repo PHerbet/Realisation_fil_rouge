@@ -11,25 +11,36 @@ body {
 }
 
 .menu {
-    /* background-color: aqua; */
+    background-color: aqua;
     border: 2px solid black;
     grid-column: 1;
     grid-row:  1/span 2;
 }
 
 .user {
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     display: flex;
     justify-content: center;
 }
 
+.hide_menu {
+    display: none;
+}
+
+.user:hover .hide_menu{
+    display: block;
+}
+
+.show_menu {
+    display: block;
+}
 img {
     text-align: center;
     width: 15px;
     height: 15px;
 }
 .all_favoris {
-    /* background-color: blue; */
+    background-color: blue;
     display: flex;
     justify-content: space-evenly;
 }
