@@ -24,15 +24,17 @@
 				</div>
 				<!-- div du bouton menu -->
 				<div class="menu_icon">
-					<img class="icon" src="./asset/img/dropdown.webp">
+					<input type="image" id="button_menu" class="icon" src="./asset/img/dropdown.webp">
 				</div>
 				<!-- div du menu caché -->
 				<div class="hide_menu">
-					<div class="parametre">
-						<a href="controler/controler_parametre.php">Paramètre</a>
-					</div>
-					<div class="deconnection">
-						<a href="deconnection">Déconnexion</a>
+					<div class="flex">
+						<div class="parametre">
+							<a href="controler/controler_parametre.php">Paramètre</a>
+						</div>
+						<div class="deconnection">
+							<a href="deconnection">Déconnexion</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -44,7 +46,7 @@
 				</div>
 				<!-- div bouton ajout dossier -->
 				<div class="add_icon">
-				<input type="image" class="icon" src="./asset/img/add_folder.webp">
+				<input type="image" class="icon" id="ad_folder" src="./asset/img/add_folder.webp">
 				</div>
 			</div>
 			<!-- div contenant tout les dossiers de favoris généré par la fonction  -->
@@ -76,7 +78,6 @@
 						Licornes 
 					</div>
 				</div>
-
 			</div>
 		</div>
 		<!-- div du menu des favoris -->
@@ -195,12 +196,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="./asset/script/menu.js"></script>
 </body>
 </html>
-<!-- div add dossier  -->
-<div class="add_dos">
-	<form action="" method="post">
-		<input type="text" name="" id="" placeholder="Nouveau dossier">
-		<input type="image" class="icon" src="./asset/img/add_folder.webp">
-	</form>
-</div>
+
