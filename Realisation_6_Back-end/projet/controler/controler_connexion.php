@@ -46,7 +46,7 @@ session_start();
                         //Redirection
                         
                         echo "<script>setTimeout(()=>{
-                            document.location.href='/correction_eval_mvc/showArticle'; 
+                            document.location.href='./controler/controler_favoris.php'; 
                             }, 1500);
                         </script>";
                     }

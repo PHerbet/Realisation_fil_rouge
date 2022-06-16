@@ -11,14 +11,14 @@ body {
 }
 
 .menu {
-    background-color: aqua;
+    /* background-color: aqua; */
     border: 2px solid black;
     grid-column: 1;
     grid-row:  1/span 2;
 }
 
 .user {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
 }
@@ -31,27 +31,22 @@ body {
     display: block;
 }
 
-.show_menu {
-    display: block;
-}
-img {
-    text-align: center;
-    width: 15px;
-    height: 15px;
-}
 .all_favoris {
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     justify-content: space-evenly;
 }
 
-/* .all_dos {
-    background-color: lightcoral;
+.all_dos {
+    /*background-color: lightcoral;*/
+    margin-top: 30px;
 }
 
 .dos {
-    background-color: lightgreen;
-} */
+    /*background-color: lightgreen;*/
+    display: flex;
+    margin: 10px;
+} 
 
 .favoris_menu {
     /* background-color: lightslategrey; */
@@ -61,7 +56,7 @@ img {
     grid-column: 2;
     grid-row: 1;
 }
-.search .searchbutton {
+.icon {
     width: 15px;
     height: 15px;
 }
@@ -74,4 +69,44 @@ img {
 
 .card{
     /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    border: solid 1px black;
+    margin: 15px;
+    max-width: 1396px;
+    max-height: 150px;
 }
+
+.card:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+.card .image{
+    grid-column: 1;
+    grid-row: 1/span 5;
+    width: 150px;
+    height: 150px;
+}
+
+.card .text{
+    grid-column: 2/span 2;
+    grid-row: 1/span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .go_trash{
+    grid-column: 4;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+.add_dos{
+    display: none;
+}
+.favoris{
+    display: flex;
+    justify-content: center;
+}
+
