@@ -14,6 +14,10 @@
     include "./controler/controler_connexion.php";
     break;
 
+    case $path === "/projet/connexion":
+        include "./controler/controler_connexion.php";
+        break;
+
     case $path === "/projet/inscription":
         include "./controler/controler_creation.php";
         break;

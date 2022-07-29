@@ -3,7 +3,7 @@ body {
 }
 
 .corps {
-    background-color: gray;
+    background-color: rgb(109, 157, 219);
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 50px auto;
@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -31,9 +32,25 @@ a {
     width: 150px;
     height: 60px;
     top: 40px;
-    background-color: rgb(173, 168, 168);
+    background-color: rgb(119, 208, 243);
     border-radius: 10px;
     border: 1px black solid;
+}
+
+.menu_icon, .user_img {
+    align-self: center;
+}
+
+.folder_icon {
+    display: flex;
+}
+
+.folder_icon .icon {
+    align-self: center;
+    }
+
+.folder{
+    margin: 5px;
 }
 
 .flex {
@@ -58,6 +75,7 @@ a {
     margin: 10px;
 } 
 
+
 .favoris_menu {
     border: 1px solid black;
     display: flex;
@@ -65,10 +83,14 @@ a {
     grid-column: 2;
     grid-row: 1;
 }
-.icon {
+.icon, .image img{
     width: 15px;
     height: 15px;
-}
+    }
+    .image img {
+        width: 150px;
+        height: 150px;
+    }
 .all_cards {
     border: 1px solid black;
     grid-column: 2;
@@ -86,7 +108,7 @@ a {
 
 .card:hover {
     box-shadow: 0 0 10px white;
-    background-color: lightgray;
+    background-color: rgb(119, 208, 243);
 }
 
 .card .image{

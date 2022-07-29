@@ -48,6 +48,11 @@
 				<div class="add_icon">
 				<input type="image" class="icon" id="ad_folder" src="./asset/img/add_folder.webp">
 				</div>
+				<div class="add_folder">
+					<form>
+						<input type="text" name="" placeholder="Nouveau Dossier" id="">
+					</form>
+				</div>
 			</div>
 			<!-- div contenant tout les dossiers de favoris généré par la fonction  -->
 			<div class="all_dos">
@@ -109,7 +114,29 @@
 			<!-- card contenant la description des favoris généré par js-->
 			<div class="card">
 				<div class="image">
-					<img src="./asset/img/test1.jpg" alt="">
+					<img src="./asset/img/test1.png" alt="">
+				</div>
+				<div class="text">
+					<div class="title">
+						<h4>"Lorem Ipsum"</h4>
+					</div>
+					<div class="description">
+						<p>Loremtium.</p>
+					</div>
+				</div>
+				<div class="go_trash">
+					<div class="go">
+						<input type="image" src="./asset/img/go.svg" class="icon">
+					</div>
+					<div class="trash">
+						<input type="image" src="./asset/img/trash.png" class="icon">
+					</div>
+				</div>
+			</div>
+			<!-- card contenant la description des favoris généré par js-->
+			<div class="card">
+				<div class="image">
+					<img src="./asset/img/test1.png" alt="">
 				</div>
 				<div class="text">
 					<div class="title">
@@ -131,7 +158,7 @@
 			<!-- card contenant la description des favoris généré par js-->
 			<div class="card">
 				<div class="image">
-					<img src="./asset/img/test1.jpg" alt="">
+					<img src="./asset/img/test1.png" alt="">
 				</div>
 				<div class="text">
 					<div class="title">
@@ -153,29 +180,7 @@
 			<!-- card contenant la description des favoris généré par js-->
 			<div class="card">
 				<div class="image">
-					<img src="./asset/img/test1.jpg" alt="">
-				</div>
-				<div class="text">
-					<div class="title">
-						<h4>"Lorem Ipsum"</h4>
-					</div>
-					<div class="description">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia debitis magni dolore fugit ipsam assumenda ex cum quod placeat sed illo architecto libero pariatur ullam tempore deleniti, vitae, porro laudantium.</p>
-					</div>
-				</div>
-				<div class="go_trash">
-					<div class="go">
-						<input type="image" src="./asset/img/go.svg" class="icon">
-					</div>
-					<div class="trash">
-						<input type="image" src="./asset/img/trash.png" class="icon">
-					</div>
-				</div>
-			</div>
-			<!-- card contenant la description des favoris généré par js-->
-			<div class="card">
-				<div class="image">
-					<img src="./asset/img/test1.jpg" alt="">
+					<img src="./asset/img/test1.png" alt="">
 				</div>
 				<div class="text">
 					<div class="title">

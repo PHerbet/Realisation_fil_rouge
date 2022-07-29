@@ -15,9 +15,9 @@
         ---------------------------------------------*/
         public function __construct($login_utilisateur, $mdp_utilisateur, $mail_utilisateur)
         {
-            $this->login_utilisateur = $login;
-            $this->mdp_utilisateur = $mdp;
-            $this->mail_utilisateur = $mail;
+            $this->login_utilisateur = $login_utilisateur;
+            $this->mdp_utilisateur = $mdp_utilisateur;
+            $this->mail_utilisateur = $mail_utilisateur;
         }
         /*---------------------------------------------
                     GETTER AND SETTER

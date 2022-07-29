@@ -21,7 +21,7 @@ session_start();
                 //instanciation of a new Object
                 $utilisateur = new Utilisateur(null, null, null, null);
                 $utilisateur -> setMailUtilisateur($_POST['mail']);
-                $utilisateur -> setImgUtilisateur($_POST['img']);
+                // $utilisateur -> setImgUtilisateur($_POST['img']);
                 //Stockage the information in an array
                 var_dump($utilisateur);
                 $test = $utilisateur->show_user_by_mail($bdd);
