@@ -23,7 +23,11 @@
         break;
 
     case $path === "/projet/favoris":
-        include "./controler/controler_favoris.php";
+        include "./controler/controler_favoris.php"; 
+        break;
+
+            case $path === "/projet/deconnexion":
+        include "./controler/controler_deconnexion.php"; 
         break;
     }
 ?>

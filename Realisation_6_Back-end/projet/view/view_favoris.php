@@ -32,8 +32,8 @@
 						<div class="parametre">
 							<a href="controler/controler_parametre.php">Paramètre</a>
 						</div>
-						<div class="deconnection">
-							<a href="deconnection">Déconnexion</a>
+						<div class="deconnexion">
+							<a href="deconnexion">Déconnexion</a>
 						</div>
 					</div>
 				</div>

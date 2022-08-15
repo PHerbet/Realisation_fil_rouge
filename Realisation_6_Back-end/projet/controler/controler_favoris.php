@@ -8,3 +8,4 @@
     include './util/connect_bdd.php';
 //Import model
     include './model/model_favoris.php';
+?>

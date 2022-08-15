@@ -28,7 +28,7 @@ session_start();
                 //If the user exist in database, we check the password
                 if(!empty($test))
                 {//Getting the hash
-                    $hash = $test[0]['mdp_utilisate'];
+                    $hash = $test[0]['mdp_utilisateur'];
                     var_dump($hash);
                     //We check the correspondance between the password in the datatbase an in the form
                     $password = password_verify($_POST['mdp'], $hash);
@@ -46,7 +46,7 @@ session_start();
                         //Redirection
                         
                         echo "<script>setTimeout(()=>{
-                            document.location.href='./controler/controler_favoris.php'; 
+                            document.location.href='/projet/favoris'; 
                             }, 1500);
                         </script>";
                     }
