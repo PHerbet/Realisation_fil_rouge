@@ -41,7 +41,7 @@
         {
             return $this->img_favoris;
         }
-        public function getIdUtilisataur():string
+        public function getIdUtilisateur():string
         {
             return $this->id_utilisateur;
         }
@@ -66,6 +66,9 @@
         {
             $this->image_favoris = $img_favoris;
         }
+        /*---------------------------------------------
+                        METHODS
+        ---------------------------------------------*/
     }
 
 ?>

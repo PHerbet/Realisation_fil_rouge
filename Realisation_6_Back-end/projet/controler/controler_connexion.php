@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 /*----------------------------------------
                 IMPORT
 ----------------------------------------*/
@@ -18,14 +18,16 @@ session_start();
         if (isset($_POST['mail']) && isset($_POST['mdp'])
         && $_POST['mail'] !="" && $_POST['mdp'] !="")
             {
+                
                 //instanciation of a new Object
-                $utilisateur = new Utilisateur(null, null, null, null);
+                $utilisateur = new Utilisateur("", "", "", "");
                 $utilisateur -> setMailUtilisateur($_POST['mail']);
                 // $utilisateur -> setImgUtilisateur($_POST['img']);
                 //Stockage the information in an array
-                var_dump($utilisateur);
+                
                 $test = $utilisateur->show_user_by_mail($bdd);
-                //If the user exist in database, we check the password
+                
+                var_dump($utilisateur);//If the user exist in database, we check the password
                 if(!empty($test))
                 {//Getting the hash
                     $hash = $test[0]['mdp_utilisateur'];

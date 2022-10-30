@@ -1,6 +1,4 @@
 <?php
-echo "<script>setTimeout(()=>{
-    document.location.href='/projet/accueil'; 
-    }, 0);
-</script>";
+ session_destroy();
+ header('Location: ./accueil');
 ?>

@@ -23,7 +23,9 @@ if (isset($_POST['inscription']))
         $utilisateur -> setMailUtilisateur($_POST['mail']);
         $utilisateur -> setImgUtilisateur($_POST['img']);
         {//Hash password
-            $utilisateur->setMdpUtilisateur(password_hash($_POST['mdp'],PASSWORD_DEFAULT));
+            $option= 10;
+            echo $utilisateur->setMdpUtilisateur(password_hash($_POST['mdp'],PASSWORD_BCRYPT),$option);
+
         //Checking if mail are already in the db
             $mail = $utilisateur->show_user_by_mail($bdd);
             if ($mail)
